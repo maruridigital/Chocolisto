@@ -83,7 +83,7 @@ function goTo(_pageid) {
 
 function loadCatalogo(){
     $.ajax({
-        url: 'actions/getCatalogo.php',
+        url: 'http://maruridigitaldev.com/chocolisto/services/getCatalogo.php',
         type: "POST",
         cache: false,
         dataType: "json",
@@ -111,7 +111,7 @@ function loadComponentes(id){
     $('#contenido-componentes div').remove();
     $('.titulo_componente').empty();
     $.ajax({
-        url: 'actions/getComponentes.php',
+        url: 'http://maruridigitaldev.com/chocolisto/services/getComponentes.php',
         type: "POST",
         cache: false,
         dataType: "json",
@@ -146,7 +146,7 @@ function loadComponenteIndividual(id){
     var flag_destino = 0;
     $('#contenido-componente-individual p').remove();
     $.ajax({
-        url: 'actions/getComponentes.php',
+        url: 'http://maruridigitaldev.com/chocolisto/services/getComponentes.php',
         type: "POST",
         cache: false,
         dataType: "json",
