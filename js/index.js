@@ -102,7 +102,7 @@ function loadCatalogo(){
             }
         },
         error: function(error) {
-
+            alert(error);
         }
     });
 }
