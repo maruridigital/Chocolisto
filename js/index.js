@@ -83,7 +83,7 @@ function goTo(_pageid) {
 
 function loadCatalogo(){
     $.ajax({
-        url: 'http://maruridigitaldev.com/chocolisto/services/getCatalogo.php',
+        url: 'https://maruridigitaldev.com/chocolisto/services/getCatalogo.php',
         type: "POST",
         cache: false,
         dataType: "json",
@@ -102,7 +102,7 @@ function loadCatalogo(){
             }
         },
         error: function(error) {
-            alert(error);
+            $('#contenido-catalogo').append('<p>'+error+'</p>');
         }
     });
 }
